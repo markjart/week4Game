@@ -1,0 +1,173 @@
+/* ---- Star Trek Font ---- */
+@font-face {
+    font-family: starFleet;
+    src: url(../fonts/DINTrek.ttf);
+}
+
+/* ---- GENERAL css ---- */
+
+#charSelectRow, #opponentsRow, #combatRow {
+  margin-top: 5px;
+}
+
+#opponentsRow {
+	border: 2px solid #ce1010;
+    border-radius: 10px;
+    margin: 25px 100px 0 30px;
+    padding: 10px 0px 10px 0;
+}
+
+#arenaTitle {
+	color: #FAD139;
+	font-family: starFleet;
+	padding: 0px 30px 0px 20px;
+	margin: -20px 0 0 0;
+	font-size: 300%;
+	float: right;
+}
+
+
+#opponentBox button {
+  width: auto;
+}
+
+.btn {
+  white-space: normal;
+}
+
+button {
+  width: 100%;
+  padding: 0 !important;
+  height: 45px;
+}
+
+.select {
+  padding: 1px;
+}
+
+.federation:hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 12px #FAD139;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+.nonFederation:hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 12px #ce1010;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+.enemyRow{
+  width: 24%;
+}
+
+.bottom-align {
+  margin-top: 115%;
+  margin-bottom: auto;
+}
+
+body {
+  background-image: url(../images/TheGamestersofTriskelion.jpg); 
+  	background-size: 100%;
+	background-position: top;
+}
+
+.title {
+  display: inline;
+}
+
+h1 {
+	color: #FAD139;
+	font-family: starFleet;
+	padding: 10px 0 0 20px;
+	margin: 0 0 0 0;
+	font-size: 500%;
+}
+
+h2 {
+	color: #FAD139;
+	font-family: starFleet;
+	padding: 0px 0px 10px 33px;
+	margin: 0 0 0 0;
+	font-size: 150%;
+}
+
+h3 {
+    color: #FAD139;
+    font-family: starFleet;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0 0 0;
+    font-size: 150%;
+}
+
+h4 {
+    color: #FAD139;
+    font-family: starFleet;
+    padding: 10px 10px 0px 60px;
+    margin: 0 0 0 0;
+    font-size: 150%;
+}
+
+.holdingCell {
+	margin: 0 0 0 0;
+	padding: 10px 10px 10px 10px;
+    max-width: 100%;	
+}
+
+.federation, 
+.nonFederation {
+	height: 100px;
+	width: 100px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+button {
+	height: 45px;
+    color: #FAD139;
+    font-family: starFleet;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0 0 0;
+    font-size: 150%;
+	border: 1px solid transparent;
+	border-radius: 3.25rem;
+}
+
+.healthy {
+	color: #ce1010;
+	border: 2px solid #ce1010;
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 10px 0px 10px 5px;
+	background-color: #000000;
+}
+
+
+#messageRow2 {
+	margin: 5px auto;
+    padding: 10px 0px 10px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

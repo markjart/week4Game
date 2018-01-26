@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Star Trek Arena of Death</title>
+		<!-- links to css to reset page -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<!-- links to jQuery.js and popper.js  -->
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>	
+		
+		<!-- links to bootstrap cdn -->		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+		<!-- link to in-house style.css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		
+		<script src="assets/javascript/game.js"></script>	
+		
+	</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4" id="cellBlock">
+				<div class="row" id="charSelectRow">
+					<div class="col-md-12 select">
+						<span class="character">
+						<h1>Star Trek</h1>
+						<h1 id="arenaTitle">Arena</h1>
+						</span>
+					</div>	
+					<div class="col-md-1 holdingCell select">
+						<span class="character">
+							<img src="assets/images/captKirk.png" id="kirk" class="btn  select federation" value="kirk">
+						</span>
+					</div>
+					<div class="col-md-1 holdingCell select"> 
+						<span class="character">
+							<img src="assets/images/spock.png" id="spock" class="btn  select federation" value="spock">
+						</span>
+					</div>
+					<div class="col-md-1 holdingCell select">
+						<span class="character">
+							<img src="assets/images/uhura.png" id="uhura" class="btn  select federation" value="uhura">
+						</span>
+					</div>
+					<div class="col-md-1 holdingCell select">
+						<span class="character">
+							<img src="assets/images/gorn.png" id="gorn" class="btn  select nonFederation" value="gorn">
+						</span>
+					</div>
+					<div class="col-md-1 holdingCell select">
+						<span class="character">
+							<img src="assets/images/khan.png" id="khan" class="btn  select nonFederation" value="khan">
+						</span>
+					</div>
+					<div class="col-md-1 holdingCell select">
+						<span class="character">
+							<img src="assets/images/kor.png" id="kor" class="btn  select nonFederation" value="kor">
+						</span>
+					</div>
+				</div> 
+				<div class="row" id="messageRow1">
+					<div class="col-md-12">
+						<h4>Player: <span id="player"/></h4>
+						<h4>Opponent: <span id="opponent"/></h4>
+						<h4>Opponents Defeated: <span id="defeated"/>	</h4>
+					</div>
+				</div> 			
+			</div>
+	  
+			<div class="col-md-8">
+				<div class="row" id="announcements">
+					<div class="col-md-12">
+					
+					</div>
+					<div class="col-md-12">
+						<div class="row invisible" id="opponentsRow">
+							<div class="col-md-4">
+							<h2>Opponents:</h2>
+							</div>
+							<div class="col-md-6" id="opponentBox">
+							</div>
+						</div> 			
+					</div>
+				</div>
+
+				<div class="row" id="messageRow2">
+					<div class="col-md-12">
+						<h2>
+							<span id="alert">Choose Your Champion!</span>
+						</h2>
+					</div>
+				</div> 				
+				
+				
+				
+				
+				
+				<div class="row" id="combatRow">
+
+					<div class="col-md-12">
+						<div class="row" id="arena">
+							<div class="col-md-2">
+								<p>&nbsp;</p>
+							</div>
+							<div class="col-md-3 invisible">
+								<div class="avatar" id="playerAvatar">
+
+								</div>
+							<div class="healthMeter">
+								<h3 class="healthy">Health: <span id="playerHealth"></span></h3>
+							</div>
+							</div>
+							<div class="col-md-2">
+								<button id="attack" class="btn btn-default btn-danger invisible">Attack</button>
+								<button id="restart" class="btn btn-default btn-success restart invisible" value="restart">Restart</button>
+							</div>
+							<div class="col-md-3 invisible">
+								<div class="avatar" id="oppAvatar">
+
+								</div>
+								<div class="healthMeter">
+									<h3 class="healthy">Health: <span id="oppHealth"></span></h3>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<p>&nbsp;</p>
+							</div>
+						</div>
+					</div>
+				</div> 			
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
